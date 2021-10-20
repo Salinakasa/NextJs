@@ -1,4 +1,4 @@
-const Test = () => {
+const Productdet = () => {
     return (
         <>
             <h1>Details page</h1>
@@ -6,4 +6,4 @@ const Test = () => {
     );
 }
  
-export default Test;
+export default Productdet;

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export const getStaticProps = async () => {
 
@@ -20,9 +21,11 @@ const Ninjas = ({ ninjas }) => {
       </Head>
       <h1 className="text-5xl">All the ninjas are displayed here:</h1>
       {ninjas.map(ninja =>(
-        <div key={ninja.id}>
-          <h3>{ ninja.name }</h3>
-        </div>
+        <Link key={ninja.id} href={'/ninjas/' + ninja.id}>
+          <a>
+            <h3>{ ninja.name }</h3>
+          </a>
+        </Link>
       ))}
     </>
     );
