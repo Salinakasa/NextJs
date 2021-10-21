@@ -21,10 +21,10 @@ const Products = ({ products }) => {
       </Head>
       <h1 className="text-5xl">All the products are displayed here:</h1>
       <div className="grid grid-cols-4 gap-5">
-        {products.map(product =>(
-          <Link key={product.id} href={'/productlists/' + product.id}>
+        {products.map(products =>(
+          <Link key={products.id} href={'/productlists/' + products.id}>
             <a>
-              <h3 className="text-blue-900 text-2xl pb-3">{product.id}. { product.title }</h3>
+              <h3 className="text-blue-900 text-2xl pt-4">{products.id}. { products.title }</h3>
             </a>
           </Link>
         ))}
@@ -33,4 +33,4 @@ const Products = ({ products }) => {
   );
 }
   
-  export default Products;
+export default Products;
