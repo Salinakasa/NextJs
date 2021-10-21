@@ -22,7 +22,7 @@ const Products = ({ products }) => {
       <h1 className="text-5xl">All the products are displayed here:</h1>
       <div className="grid grid-cols-4 gap-5">
         {products.map(product =>(
-          <Link key={product.id} href={'/products/' + product.id}>
+          <Link key={product.id} href={'/productlists/' + product.id}>
             <a>
               <h3 className="text-blue-900 text-2xl pb-3">{product.id}. { product.title }</h3>
             </a>
