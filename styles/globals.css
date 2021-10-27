@@ -1,6 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Rubik", sans-serif;
+  color: #504f51;
+  font-size: 16px;
+}
+.leading-78 {
+  line-height: 78px;
+}
+
+.main-slider {
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  width: 100%;
+  height: calc(100vh - 180px);
+}
+.main-slider:before {
+  background: #000000;
+}
+.slick-arrow {
+  z-index: 999;
+  padding: 25px !important;
+  background-color: #00000066 !important;
+}
+.slick-arrow:hover {
+  background-color: #00000099 !important;
+  transition: 0.2s ease-in;
+}
+.slick-prev {
+  left: 0 !important;
+  position: relative;
+}
+.slick-next {
+  right: 0 !important;
+  position: relative;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: unset !important;
+  position: absolute;
+  top: 13px;
+}
+.slick-prev:before {
+  left: 12px;
+}
+.slick-next:before {
+  right: 12px;
 }
